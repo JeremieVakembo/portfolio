@@ -1,0 +1,67 @@
+:root{
+  --dark:#111827;
+  --muted:#667085;
+  --light:#f7f8fa;
+  --accent:#2563eb;
+  --border:#e5e7eb;
+}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--dark)}
+.navbar{min-height:76px}
+.navbar-brand{font-size:1.7rem;letter-spacing:-1px}
+.navbar-brand span,.accent{color:var(--accent)}
+.nav-link{font-weight:500;color:#475467!important}
+.nav-link:hover,.nav-link.active{color:var(--dark)!important}
+.hero-section{padding:150px 0 90px;background:linear-gradient(135deg,#fff 0%,#f5f7fb 100%)}
+.eyebrow{font-size:.76rem;font-weight:800;letter-spacing:.16em;color:var(--accent)}
+.eyebrow.light{color:#93c5fd}
+.hero-section h1{letter-spacing:-.055em;line-height:1.02;max-width:760px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:28px}
+.hero-meta div{display:flex;flex-direction:column}
+.hero-meta strong{font-size:.8rem;color:var(--accent)}
+.hero-meta span{font-size:.85rem;color:var(--muted)}
+.profile-card{background:#fff;border:1px solid var(--border);border-radius:24px;padding:18px;box-shadow:0 24px 70px rgba(16,24,40,.10);transform:rotate(1deg)}
+.profile-photo{width:100%;height:330px;display:block;object-fit:cover;object-position:center 42%;border-radius:18px}
+.profile-info{padding:22px 8px 8px}
+.social{width:42px;height:42px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--dark);text-decoration:none}
+.section-padding{padding:100px 0}
+.section-heading{max-width:720px;margin-bottom:55px}
+.section-heading h2{font-size:clamp(2rem,4vw,3rem);font-weight:750;letter-spacing:-.04em;margin-top:12px}
+.about-box{border:1px solid var(--border);border-radius:20px;padding:12px;background:#fff}
+.about-box div{display:flex;gap:15px;align-items:center;padding:18px;border-bottom:1px solid var(--border);font-weight:600}
+.about-box div:last-child{border-bottom:0}
+.about-box i{font-size:1.3rem;color:var(--accent)}
+.skill-card{height:100%;border:1px solid var(--border);border-radius:18px;padding:28px;transition:.25s;background:#fff}
+.skill-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(16,24,40,.08)}
+.skill-card img{width:48px;height:48px;display:block;object-fit:contain}
+.skill-card h5{margin-top:12px;font-weight:700}
+.skill-card p{color:var(--muted);font-size:.92rem;margin-bottom:0}
+.project-card{height:100%;border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:34px;background:#182132;transition:.25s}
+.project-card:hover{transform:translateY(-5px);background:#1d2939}
+.project-number{font-size:.8rem;color:#94a3b8;margin-bottom:45px}
+.project-type{font-size:.7rem;letter-spacing:.12em;color:#93c5fd;font-weight:800}
+.project-card h3{font-size:1.6rem;margin:12px 0}
+.project-card p{color:#b8c1ce;line-height:1.7}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}
+.tags span{border:1px solid rgba(255,255,255,.16);border-radius:50px;padding:5px 10px;font-size:.75rem;color:#dbe3ed}
+.project-link{color:#fff;text-decoration:none;font-weight:700}
+.timeline{max-width:850px;border-left:1px solid #d0d5dd;margin-left:12px}
+.timeline-item{position:relative;padding:0 0 45px 48px;display:flex;gap:20px}
+.timeline-item>span{position:absolute;left:-18px;width:36px;height:36px;border-radius:50%;background:#fff;border:1px solid #cbd5e1;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:800;color:var(--accent)}
+.timeline-item h5{font-weight:750;margin-bottom:8px}
+.timeline-item p{color:var(--muted);margin:0}
+.contact-section{background:var(--light)}
+.contact-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:12px}
+.contact-card a{display:flex;align-items:center;gap:16px;padding:18px;color:var(--dark);text-decoration:none;border-bottom:1px solid var(--border);font-weight:600}
+.contact-card a:last-child{border-bottom:0}
+.contact-card i{font-size:1.25rem;color:var(--accent)}
+@media(max-width:991px){
+  .hero-section{padding-top:125px}
+  .profile-card{transform:none;max-width:520px;margin:auto}
+}
+@media(max-width:576px){
+  .section-padding{padding:75px 0}
+  .hero-section{padding-bottom:70px}
+  .hero-section h1{font-size:2.7rem}
+  .profile-photo{height:260px}
+}
